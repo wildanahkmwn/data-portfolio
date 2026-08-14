@@ -1,4 +1,4 @@
-"""Generate a realistic sample orders.csv for demos."""
+"""Generate a synthetic orders.csv fallback (not used when masked sample exists)."""
 
 from __future__ import annotations
 

@@ -14,9 +14,9 @@ sys.path.insert(0, str(ROOT))
 from scripts.ch_utils import get_client
 
 
-st.set_page_config(page_title="Ecommerce Sales Dashboard", layout="wide")
-st.title("Ecommerce Sales Dashboard")
-st.caption("Portfolio demo: ClickHouse marts served via Streamlit")
+st.set_page_config(page_title="Agronomy Marketplace Dashboard", layout="wide")
+st.title("Agronomy Marketplace Dashboard")
+st.caption("Portfolio demo: anonymized order marts in ClickHouse, served via Streamlit")
 
 
 @st.cache_data(ttl=60)

@@ -6,9 +6,9 @@ Pakai post ini setelah repo sudah di GitHub dan ada screenshot dashboard.
 
 ## Post versi pendek
 
-Saya bangun portfolio end-to-end data stack dari nol:
+Saya bangun portfolio end-to-end data stack untuk marketplace agronomi:
 
-Raw ecommerce orders -> ClickHouse -> SQL marts -> data quality checks -> Streamlit dashboard.
+Masked order lines -> ClickHouse -> SQL marts -> data quality checks -> Streamlit dashboard.
 
 Yang saya tekankan bukan hanya "bisa query", tapi alur yang dipakai bisnis:
 1. Ingest data transaksi

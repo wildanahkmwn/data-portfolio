@@ -1,14 +1,21 @@
-# Ecommerce ClickHouse Pipeline
+# Agronomy Marketplace Analytics Pipeline
 
-End-to-end data portfolio project: raw ecommerce orders to ClickHouse marts to a Streamlit dashboard.
+End-to-end portfolio project for an agronomy marketplace:
+masked order lines -> ClickHouse marts -> data quality checks -> Streamlit dashboard.
 
 Built to demonstrate the same pattern used in production stacks:
 ingest -> warehouse -> transform -> data quality -> serve.
 
+## Domain
+
+Sample data is an **anonymized extract** of marketplace order lines for agricultural inputs
+(seeds, fertilizer, herbicides, tools, and related SKUs). Buyer identities are pseudonymized;
+no phones, emails, or addresses are included.
+
 ## Architecture
 
 ```text
-sample CSV / Fake Store API
+masked orders CSV
         |
         v
   Python ingest (Airflow DAG or CLI)
@@ -68,7 +75,7 @@ Dashboard: http://localhost:8501
 
 ### Dashboard preview
 
-![Ecommerce Sales Dashboard](docs/screenshots/dashboard-metrics.png)
+![Agronomy Marketplace Sales Dashboard](docs/screenshots/dashboard-metrics.png)
 
 ## Airflow (optional)
 
@@ -102,6 +109,7 @@ ecommerce-clickhouse-pipeline/
     dashboard.py
   scripts/
     run_pipeline.py
+    export_masked_sample.py
     generate_sample_data.py
   sample_data/
     orders.csv
@@ -109,6 +117,7 @@ ecommerce-clickhouse-pipeline/
     architecture.md
     linkedin_case_study.md
     services_one_pager.md
+    screenshots/
 ```
 
 ## Metrics on the dashboard

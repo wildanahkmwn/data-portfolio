@@ -2,13 +2,13 @@
 
 ## Goal
 
-Show a complete, demable path from raw ecommerce transactions to trusted metrics.
+Show a complete, demable path from agronomy marketplace transactions to trusted metrics.
 
 ## Components
 
 | Component | Role |
 |---|---|
-| `sample_data/orders.csv` | Source system stand-in (replaceable by Shopify/API) |
+| `sample_data/orders.csv` | Anonymized marketplace order lines (IDs hashed, no PII) |
 | `scripts/run_pipeline.py` | Local orchestrator |
 | `dags/ecommerce_ingest_dag.py` | Airflow orchestration (optional) |
 | ClickHouse `raw_orders` | Immutable-ish landing table |
