@@ -1,53 +1,52 @@
-# Services One-Pager (untuk Notion / proposal)
+# Services one-pager
 
-## Siapa saya
+Use this for proposals, Notion, email, or Upwork attachments.
+Pair with `docs/case_study.md` and `docs/screenshots/dashboard-metrics.png`.
 
-End-to-end data specialist: pipeline, warehouse, quality, dan dashboard.
-Stack utama: Python, SQL, Airflow, ClickHouse, Streamlit/BI.
+## Who I am
 
-## Masalah yang saya selesaikan
+End-to-end data specialist: pipeline, warehouse, quality, and dashboard.
+Main stack: Python, SQL, Airflow, ClickHouse, Streamlit/BI.
 
-- Angka sales di dashboard tidak sama dengan finance
-- Data terlambat / tidak tahu kapan terakhir update
-- Sumber data banyak (Shopify, Odoo, sheet, API) tapi belum terpusat
-- Butuh MVP data stack cepat, bukan platform mahal
+## Problems I solve
 
-## Paket
+- Sales numbers differ between dashboard and finance
+- Data is late or freshness is unknown
+- Sources are scattered (Shopify, Odoo, sheets, API) with no center of truth
+- Teams need an MVP data stack, not an expensive platform rebuild
 
-### 1) Data Health Check (3-5 hari)
-Output:
-- peta sumber data
-- daftar issue prioritas (quality, freshness, modeling)
-- rekomendasi perbaikan 30 hari
+## Packages
 
-### 2) Dashboard Rescue (1-2 minggu)
-Output:
-- definisi metric (GMV, AOV, dll)
-- perbaikan query/mart
-- dashboard yang konsisten
+### 1) Data Health Check (3-5 days)
+- Source map
+- Prioritized quality / freshness / modeling issues
+- 30-day remediation plan
 
-### 3) MVP Data Stack (2-4 minggu)
-Output:
-- ingest otomatis
-- warehouse + marts
-- quality checks
-- 1 dashboard inti
+### 2) Dashboard Rescue (1-2 weeks)
+- Metric definitions (GMV, AOV, and related)
+- Mart / query fixes
+- One consistent stakeholder dashboard
 
-### 4) Retainer bulanan
-Output:
-- monitoring pipeline
-- ad-hoc analysis
-- perbaikan bertahap
+### 3) MVP Data Stack (2-4 weeks)
+- Automated ingest
+- Warehouse + marts
+- Quality checks
+- Core dashboard
 
-## Bukti kerja (portfolio)
+### 4) Monthly retainer
+- Pipeline monitoring
+- Ad-hoc analysis
+- Incremental improvements
 
-Project: Ecommerce ClickHouse Pipeline
-- raw -> mart -> quality -> dashboard
-- link repo: [isi]
-- link demo: [isi]
+## Proof of work
 
-## Cara mulai
+Project: Agronomy Marketplace Analytics Pipeline  
+Flow: masked orders -> ClickHouse marts -> quality gates -> Streamlit  
+Repo: https://github.com/wildanahkmwn/ecommerce-clickhouse-pipeline/tree/main/projects/agronomy-marketplace-analytics  
+Screenshot: `projects/agronomy-marketplace-analytics/docs/screenshots/dashboard-metrics.png`
 
-1. Kirim 3 pertanyaan bisnis yang paling penting
-2. Saya usulkan paket + estimasi
-3. Kickoff dalam 3-5 hari kerja
+## How to start
+
+1. Send the top 3 business questions you need answered
+2. I propose a package and estimate
+3. Kickoff within 3-5 working days
