@@ -22,6 +22,6 @@ SELECT
     countDistinct(order_id) AS orders,
     sum(quantity * unit_price) AS gmv,
     sum(quantity * unit_price) / nullIf(countDistinct(order_id), 0) AS aov
-FROM ecommerce.raw_orders
+FROM ecommerce.raw_orders FINAL
 GROUP BY customer_id
 ORDER BY gmv DESC;

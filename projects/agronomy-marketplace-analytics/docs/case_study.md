@@ -1,7 +1,6 @@
 # Case Study: Agronomy Marketplace Analytics Pipeline
 
-Attach this file (or export to PDF) anywhere: Upwork proposal, LinkedIn Featured,
-email, Notion, company intake form.
+Attach this file (or export to PDF) anywhere: Upwork proposal, email, Notion.
 
 ## Snapshot
 
@@ -9,65 +8,54 @@ email, Notion, company intake form.
 |---|---|
 | Role | End-to-end data / analytics engineer |
 | Domain | Agronomy marketplace (agricultural inputs) |
-| Stack | Python, SQL, ClickHouse, Streamlit, Airflow (optional) |
+| Stack | Postgres, Python, ClickHouse, Metabase (Streamlit optional) |
 | Repo | https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics |
 | Visual | `docs/screenshots/dashboard-metrics.png` |
 
 ## Problem
 
-Marketplace teams often have order data but still struggle with:
-
-- GMV / AOV numbers that disagree across reports
-- No clear freshness check (is this data from today or last week?)
-- Duplicate or incomplete order lines slipping into dashboards
-- Business users cannot self-serve a trusted view
+Marketplace order data lives in Postgres. Ops still ask for GMV/AOV "hari ini"
+but reports are nightly, numbers disagree, and nobody trusts freshness.
 
 ## Solution
 
-Built a compact production-style path:
-
-1. Load anonymized order lines into ClickHouse (`raw_orders`)
-2. Transform into business marts (daily sales, customer LTV, top products)
-3. Run quality gates before serving (nulls, duplicates, GMV consistency, freshness)
-4. Serve a Streamlit dashboard for non-technical consumption
+1. Keep Postgres as system of record
+2. Stream changed order lines into ClickHouse by watermark `(updated_at, id)`
+3. Build marts (daily sales, customer LTV, top products)
+4. Quality gate: Postgres vs ClickHouse row/GMV parity, duplicates, freshness
+5. Serve Metabase for business users (Streamlit only as a demo app)
 
 ## Architecture
 
 ```text
-masked order CSV
+Postgres marketplace_orders
       |
-      v
-Python ingest (CLI or Airflow)
-      |
+      |  stream worker
       v
 ClickHouse raw + marts
       |
- +----+----+
- |         |
- v         v
-quality   Streamlit
-checks    dashboard
+ +----+------------+
+ |                 |
+ v                 v
+quality          Metabase
+checks           (client BI)
 ```
 
-## Sample outcome (from anonymized demo data)
+## Sample outcome (anonymized demo)
 
-- ~3,000 order lines / ~2,800 orders
-- Marts for GMV, AOV, top products, customer LTV
-- All quality checks passing before dashboard serve
+- ~3,000 order lines from a masked extract
+- Near-real-time catch-up when new Postgres rows are inserted
+- All quality checks passing before the dashboard is used
 
 ## What this proves
 
-- Can design a clear data flow, not only ad-hoc SQL
-- Can define business metrics with consistent grain
-- Can gate bad data before it reaches stakeholders
-- Can deliver an interface a non-engineer can use
+- Can connect OLTP (Postgres) to OLAP (ClickHouse), not only load a CSV
+- Can define GMV / AOV / LTV with a consistent grain
+- Can gate bad or stale data before stakeholders see it
+- Can put a BI tool in front that non-engineers actually open
 
 ## Attachments checklist
 
-When sending to a client / Upwork / recruiter, attach:
-
-1. This case study (PDF or Markdown)
-2. Dashboard screenshot (`docs/screenshots/dashboard-metrics.png`)
+1. This case study
+2. Dashboard screenshot
 3. Repo link above
-
-Optional: 45-60s screen recording of pipeline run + dashboard.

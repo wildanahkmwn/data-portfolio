@@ -9,8 +9,7 @@ Shared hire-me docs live in `docs/` so they can be attached on Upwork, email, or
 
 | Project | Domain | Stack | Status |
 |---|---|---|---|
-| [agronomy-marketplace-analytics](projects/agronomy-marketplace-analytics/) | Agronomy marketplace orders | Python, ClickHouse, Streamlit, Airflow (optional) | Ready |
-| [postgres-to-clickhouse-stream](projects/postgres-to-clickhouse-stream/) | Postgres -> ClickHouse near-real-time sync | Postgres, Python, ClickHouse | Ready |
+| [agronomy-marketplace-analytics](projects/agronomy-marketplace-analytics/) | Agronomy marketplace: Postgres to ClickHouse to Metabase | Postgres, Python, ClickHouse, Metabase | Ready |
 
 ## Shared attachments
 
@@ -21,23 +20,24 @@ Shared hire-me docs live in `docs/` so they can be attached on Upwork, email, or
 | Project `docs/case_study.md` | Per-project case study |
 | Project `docs/screenshots/` | Visual proof |
 
-## How to run a project
+## How to run
 
 ```bash
-cd projects/<project-name>
-docker compose up -d
+cd projects/agronomy-marketplace-analytics
+docker compose up -d --build
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/run_pipeline.py
 python checks/data_quality.py
-streamlit run app/dashboard.py
 ```
+
+Metabase: http://localhost:3000
 
 ## Add a new portfolio project
 
-1. Copy `projects/_template/` (or clone structure from an existing project)
+1. Copy `projects/_template/`
 2. Put code under `projects/<short-name>/`
-3. Add a case study + screenshot in that project's `docs/`
+3. Add a case study + screenshot
 4. Register it in the table above
 
 ## License

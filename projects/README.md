@@ -9,19 +9,18 @@ Self-contained portfolio demos. Each folder should include:
 
 ## Current
 
-- `agronomy-marketplace-analytics/` — marketplace orders to ClickHouse marts to Streamlit
-- `postgres-to-clickhouse-stream/` — near-real-time Postgres to ClickHouse sync
+- `agronomy-marketplace-analytics/` — Postgres orders streamed to ClickHouse marts, served in Metabase
 
 ## Template
 
 ```text
 projects/<short-name>/
   README.md
-  requirements.txt          # if Python
-  docker-compose.yml        # if needed
+  requirements.txt
+  docker-compose.yml
   docs/
     case_study.md
     screenshots/
   app/ or src/
-  sql/                      # optional
+  sql/
 ```

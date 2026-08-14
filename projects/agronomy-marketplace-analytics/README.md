@@ -1,47 +1,79 @@
 # Agronomy Marketplace Analytics
 
-End-to-end portfolio project for an agronomy marketplace:
-masked order lines -> ClickHouse marts -> data quality checks -> Streamlit dashboard.
+End-to-end portfolio project:
+
+**Postgres (OLTP) -> stream -> ClickHouse (OLAP marts) -> dashboard**
 
 Part of the [data portfolio monorepo](../../README.md).
 
 ## Domain
 
-Sample data is an **anonymized extract** of marketplace order lines for agricultural inputs
-(seeds, fertilizer, herbicides, tools, and related SKUs). Buyer identities are pseudonymized;
-no phones, emails, or addresses are included.
+Anonymized marketplace order lines for agricultural inputs
+(seeds, fertilizer, herbicides, tools). Buyer identities are hashed;
+no phones, emails, or addresses.
 
 ## Architecture
 
 ```text
-masked orders CSV
+Postgres marketplace_orders     (source of truth)
+        |
+        |  watermark stream (updated_at, id)
+        v
+ClickHouse ecommerce.raw_orders
         |
         v
-  Python ingest (Airflow DAG or CLI)
+   SQL marts + quality checks
         |
-        v
-   ClickHouse (raw + marts)
-        |
-   +----+----+
-   |         |
-   v         v
- quality   Streamlit
- checks    dashboard
+   +----+----------------+
+   |                     |
+   v                     v
+Metabase              Streamlit
+(client BI)           (optional demo app)
 ```
+
+## Dashboard: what to sell vs what to demo
+
+Streamlit is fine for a **portfolio demo** and for a custom internal tool.
+It is usually **not** what a client wants to buy as their daily BI.
+
+| Tool | Who uses it | Sellable as |
+|---|---|---|
+| **Metabase** | Ops / finance / founders, click filters, save questions | Default for SME/startup freelance |
+| Looker Studio | Google-shop teams | Cheap reporting |
+| Power BI / Tableau | Corporate | Only if they already pay for it |
+| Apache Superset | More technical teams | Open-source BI alternative |
+| Streamlit | Analysts, custom apps, prototypes | MVP / internal app, not a BI platform |
+
+This repo ships **Metabase** as the client-facing layer and keeps Streamlit as a 1-file demo.
 
 ## Quick start
 
 ```bash
-docker compose up -d
+cd projects/agronomy-marketplace-analytics
+docker compose up -d --build
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python scripts/run_pipeline.py
 python checks/data_quality.py
-streamlit run app/dashboard.py
 ```
 
-Dashboard: http://localhost:8501
+Then:
+
+- Metabase (sellable BI): http://localhost:3000
+  - Add ClickHouse: host `clickhouse`, port `8123`, user `default`, password `analytics`, SSL off
+    (this works because Metabase runs in the same Docker network)
+- Streamlit demo: `streamlit run app/dashboard.py` then http://localhost:8501
+
+### Prove the stream
+
+```bash
+python scripts/seed_more.py 5
+# wait a few seconds
+python checks/data_quality.py
+```
+
+Postgres gets new rows; the stream worker copies them into ClickHouse; marts rebuild.
 
 ### Dashboard preview
 
@@ -49,33 +81,35 @@ Dashboard: http://localhost:8501
 
 ## What you get
 
-- Incremental-style load into ClickHouse (`raw_orders`)
+- Postgres as operational source (`marketplace_orders`)
+- Near-real-time sync into ClickHouse (`ReplacingMergeTree` + watermark)
 - SQL marts: daily sales, customer LTV, top products
-- Data quality checks: nulls, duplicates, freshness
-- Streamlit dashboard: GMV, AOV, orders, top products, freshness
+- Quality checks: PG vs CH parity, nulls, duplicates, freshness
+- Metabase for stakeholders, Streamlit as optional demo
 
-## Airflow (optional)
+## Ports and credentials
 
-Copy `dags/ecommerce_ingest_dag.py` into your Airflow `dags/` folder.
-Env vars: `CLICKHOUSE_HOST`, `CLICKHOUSE_PORT`, `CLICKHOUSE_USER`,
-`CLICKHOUSE_PASSWORD`, `CLICKHOUSE_DATABASE` (defaults target local demo).
+| Service | Port | Login |
+|---|---|---|
+| Postgres | 5434 | agro / agro, db `marketplace` |
+| ClickHouse | 8123 | default / analytics |
+| Metabase | 3000 | first-run setup wizard |
+| Streamlit | 8501 | local only |
 
 ## Layout
 
 ```text
 agronomy-marketplace-analytics/
   docker-compose.yml
-  requirements.txt
   app/dashboard.py
   checks/data_quality.py
-  dags/ecommerce_ingest_dag.py
-  scripts/
+  postgres/init/01_schema.sql
+  scripts/run_pipeline.py
+  scripts/stream_worker.py
+  scripts/seed_more.py
   sql/
   sample_data/orders.csv
   docs/
-    architecture.md
-    case_study.md
-    screenshots/
 ```
 
 ## Metrics
@@ -86,10 +120,10 @@ agronomy-marketplace-analytics/
 | Orders | Distinct `order_id` |
 | AOV | GMV / Orders |
 | Top products | Revenue by `product_name` |
-| Freshness | Hours since latest load |
+| Freshness | Hours since latest ClickHouse sync |
 
 ## Case study / attachments
 
 - [Case study](docs/case_study.md)
 - Screenshot: `docs/screenshots/dashboard-metrics.png`
-- Shared freelance pack (repo root): `../../docs/freelance_profile.md`
+- Shared freelance pack: `../../docs/freelance_profile.md`

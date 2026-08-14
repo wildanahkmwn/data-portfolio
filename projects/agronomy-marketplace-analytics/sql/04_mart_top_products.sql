@@ -20,6 +20,6 @@ SELECT
     countDistinct(order_id) AS orders,
     sum(quantity) AS units,
     sum(quantity * unit_price) AS gmv
-FROM ecommerce.raw_orders
+FROM ecommerce.raw_orders FINAL
 GROUP BY product_id
 ORDER BY gmv DESC;

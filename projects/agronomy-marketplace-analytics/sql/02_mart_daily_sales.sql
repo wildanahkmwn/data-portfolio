@@ -18,6 +18,6 @@ SELECT
     sum(quantity * unit_price) AS gmv,
     sum(quantity * unit_price) / nullIf(countDistinct(order_id), 0) AS aov,
     sum(quantity) AS units
-FROM ecommerce.raw_orders
+FROM ecommerce.raw_orders FINAL
 GROUP BY order_date
 ORDER BY order_date;

@@ -1,8 +1,4 @@
-"""Data quality checks for ecommerce ClickHouse marts.
-
-Exit code 0 = all checks passed.
-Exit code 1 = one or more checks failed.
-"""
+"""Data quality checks across Postgres source and ClickHouse marts."""
 
 from __future__ import annotations
 
@@ -14,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from scripts.ch_utils import get_client
+from scripts.pg_utils import get_connection, source_totals
 
 
 @dataclass
@@ -29,27 +26,30 @@ def _scalar(client, sql: str):
 
 
 def check_raw_not_empty(client) -> CheckResult:
-    n = _scalar(client, "SELECT count() FROM ecommerce.raw_orders")
+    n = _scalar(client, "SELECT count() FROM ecommerce.raw_orders FINAL")
     return CheckResult("raw_orders_not_empty", bool(n and n > 0), f"rows={n}")
 
 
 def check_no_null_order_id(client) -> CheckResult:
     n = _scalar(
         client,
-        "SELECT count() FROM ecommerce.raw_orders WHERE order_id IS NULL OR order_id = ''",
+        """
+        SELECT count()
+        FROM ecommerce.raw_orders FINAL
+        WHERE order_id IS NULL OR order_id = ''
+        """,
     )
     return CheckResult("no_null_or_blank_order_id", n == 0, f"bad_rows={n}")
 
 
 def check_no_duplicate_line_keys(client) -> CheckResult:
-    # Same order_id + product_id should not appear twice in demo load.
     n = _scalar(
         client,
         """
         SELECT count()
         FROM (
             SELECT order_id, product_id, count() AS c
-            FROM ecommerce.raw_orders
+            FROM ecommerce.raw_orders FINAL
             GROUP BY order_id, product_id
             HAVING c > 1
         )
@@ -72,7 +72,8 @@ def check_mart_row_counts(client) -> CheckResult:
 
 def check_gmv_consistency(client) -> CheckResult:
     raw_gmv = _scalar(
-        client, "SELECT sum(quantity * unit_price) FROM ecommerce.raw_orders"
+        client,
+        "SELECT sum(quantity * unit_price) FROM ecommerce.raw_orders FINAL",
     )
     mart_gmv = _scalar(client, "SELECT sum(gmv) FROM ecommerce.mart_daily_sales")
     ok = (
@@ -87,12 +88,32 @@ def check_gmv_consistency(client) -> CheckResult:
     )
 
 
+def check_pg_ch_parity(client) -> CheckResult:
+    with get_connection() as pg:
+        pg_rows, pg_gmv = source_totals(pg)
+    ch_rows = _scalar(client, "SELECT count() FROM ecommerce.raw_orders FINAL")
+    ch_gmv = _scalar(
+        client,
+        "SELECT coalesce(sum(quantity * unit_price), 0) FROM ecommerce.raw_orders FINAL",
+    )
+    ok = (
+        ch_rows == pg_rows
+        and ch_gmv is not None
+        and abs(float(ch_gmv) - pg_gmv) < 0.01
+    )
+    return CheckResult(
+        "postgres_equals_clickhouse",
+        ok,
+        f"pg_rows={pg_rows}, ch_rows={ch_rows}, pg_gmv={pg_gmv}, ch_gmv={ch_gmv}",
+    )
+
+
 def check_freshness(client, max_age_days: int = 7) -> CheckResult:
     age = _scalar(
         client,
         """
         SELECT dateDiff('day', max(order_date), today())
-        FROM ecommerce.raw_orders
+        FROM ecommerce.raw_orders FINAL
         """,
     )
     ok = age is not None and age <= max_age_days
@@ -111,6 +132,7 @@ def main() -> int:
         check_no_duplicate_line_keys,
         check_mart_row_counts,
         check_gmv_consistency,
+        check_pg_ch_parity,
         check_freshness,
     ]
 

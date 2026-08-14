@@ -7,7 +7,7 @@ Not platform-locked. Pair with `docs/case_study.md` + dashboard screenshot.
 
 1. Data Engineer | ClickHouse, Python, SQL | Pipelines + Dashboards
 2. Analytics Engineer | Marketplace GMV/AOV Marts + Data Quality
-3. End-to-End Data Specialist | Ingest, Warehouse, Quality, Streamlit
+3. End-to-End Data Specialist | Ingest, Warehouse, Quality, Metabase
 
 ## Overview (paste into Upwork About)
 
@@ -17,14 +17,13 @@ ingest -> warehouse -> SQL marts -> quality checks -> dashboard.
 Typical outcomes:
 - Trusted GMV / AOV / LTV metrics with clear definitions
 - Freshness and duplicate checks before data is used
-- Lightweight MVP stack (ClickHouse + Python + Streamlit) without heavy platform cost
+- Lightweight MVP stack (Postgres + ClickHouse + Metabase) without heavy platform cost
 
 Portfolio monorepo:
 https://github.com/wildanahkmwn/data-portfolio
 
-Featured projects:
-- `projects/agronomy-marketplace-analytics/`
-- `projects/postgres-to-clickhouse-stream/`
+Featured project:
+- `projects/agronomy-marketplace-analytics/` (Postgres -> ClickHouse -> Metabase)
 
 I work well when the brief is fuzzy ("our numbers don't match") and need
 someone who can turn it into a measurable pipeline and a usable dashboard.

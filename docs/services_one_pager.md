@@ -6,7 +6,7 @@ Pair with `docs/case_study.md` and `docs/screenshots/dashboard-metrics.png`.
 ## Who I am
 
 End-to-end data specialist: pipeline, warehouse, quality, and dashboard.
-Main stack: Python, SQL, Airflow, ClickHouse, Streamlit/BI.
+Main stack: Python, SQL, Airflow, Postgres, ClickHouse, Metabase.
 
 ## Problems I solve
 
@@ -41,7 +41,7 @@ Main stack: Python, SQL, Airflow, ClickHouse, Streamlit/BI.
 ## Proof of work
 
 Project: Agronomy Marketplace Analytics Pipeline  
-Flow: masked orders -> ClickHouse marts -> quality gates -> Streamlit  
+Flow: Postgres orders -> ClickHouse marts -> quality gates -> Metabase  
 Repo: https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics  
 Screenshot: `projects/agronomy-marketplace-analytics/docs/screenshots/dashboard-metrics.png`
 
