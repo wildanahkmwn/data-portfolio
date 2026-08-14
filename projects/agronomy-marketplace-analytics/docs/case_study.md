@@ -10,7 +10,7 @@ email, Notion, company intake form.
 | Role | End-to-end data / analytics engineer |
 | Domain | Agronomy marketplace (agricultural inputs) |
 | Stack | Python, SQL, ClickHouse, Streamlit, Airflow (optional) |
-| Repo | https://github.com/wildanahkmwn/ecommerce-clickhouse-pipeline/tree/main/projects/agronomy-marketplace-analytics |
+| Repo | https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics |
 | Visual | `docs/screenshots/dashboard-metrics.png` |
 
 ## Problem

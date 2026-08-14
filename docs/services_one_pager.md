@@ -42,7 +42,7 @@ Main stack: Python, SQL, Airflow, ClickHouse, Streamlit/BI.
 
 Project: Agronomy Marketplace Analytics Pipeline  
 Flow: masked orders -> ClickHouse marts -> quality gates -> Streamlit  
-Repo: https://github.com/wildanahkmwn/ecommerce-clickhouse-pipeline/tree/main/projects/agronomy-marketplace-analytics  
+Repo: https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics  
 Screenshot: `projects/agronomy-marketplace-analytics/docs/screenshots/dashboard-metrics.png`
 
 ## How to start

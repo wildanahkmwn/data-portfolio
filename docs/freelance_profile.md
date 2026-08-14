@@ -20,7 +20,7 @@ Typical outcomes:
 - Lightweight MVP stack (ClickHouse + Python + Streamlit) without heavy platform cost
 
 Portfolio monorepo:
-https://github.com/wildanahkmwn/ecommerce-clickhouse-pipeline
+https://github.com/wildanahkmwn/data-portfolio
 
 Featured project:
 `projects/agronomy-marketplace-analytics/`
@@ -49,7 +49,7 @@ I can help with a focused MVP:
 
 Relevant proof of work:
 - Case study: agronomy marketplace analytics pipeline
-- Repo: https://github.com/wildanahkmwn/ecommerce-clickhouse-pipeline/tree/main/projects/agronomy-marketplace-analytics
+- Repo: https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics
 - Screenshot attached (GMV / AOV / top products / freshness)
 
 Suggested start: a paid discovery (1-2 days) to map your sources and propose
