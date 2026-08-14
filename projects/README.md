@@ -9,7 +9,7 @@ Self-contained portfolio demos. Each folder should include:
 
 ## Current
 
-- `agronomy-marketplace-analytics/` — Postgres orders streamed to ClickHouse marts, served in Metabase
+- `agronomy-marketplace-analytics/` — Postgres to ClickHouse pipeline, analyst insights, GMV forecast / reactivation
 
 ## Template
 

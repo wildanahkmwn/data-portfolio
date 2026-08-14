@@ -40,8 +40,8 @@ Main stack: Python, SQL, Airflow, Postgres, ClickHouse, Metabase.
 
 ## Proof of work
 
-Project: Agronomy Marketplace Analytics Pipeline  
-Flow: Postgres orders -> ClickHouse marts -> quality gates -> Metabase  
+Project: Agronomy Marketplace Analytics  
+Flow: Postgres -> ClickHouse -> quality -> Metabase + analyst insights + forecast  
 Repo: https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics  
 Screenshot: `projects/agronomy-marketplace-analytics/docs/screenshots/dashboard-metrics.png`
 

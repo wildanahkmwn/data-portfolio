@@ -1,61 +1,61 @@
-# Case Study: Agronomy Marketplace Analytics Pipeline
+# Case Study: Agronomy Marketplace (DE + DA + DS)
 
-Attach this file (or export to PDF) anywhere: Upwork proposal, email, Notion.
+Attach this file (or export to PDF) on Upwork, email, or Notion.
 
 ## Snapshot
 
 | Field | Detail |
 |---|---|
-| Role | End-to-end data / analytics engineer |
+| Role | Data engineer + analyst + applied scientist |
 | Domain | Agronomy marketplace (agricultural inputs) |
-| Stack | Postgres, Python, ClickHouse, Metabase (Streamlit optional) |
+| Stack | Postgres, Python, ClickHouse, Metabase |
 | Repo | https://github.com/wildanahkmwn/data-portfolio/tree/main/projects/agronomy-marketplace-analytics |
 | Visual | `docs/screenshots/dashboard-metrics.png` |
 
 ## Problem
 
-Marketplace order data lives in Postgres. Ops still ask for GMV/AOV "hari ini"
-but reports are nightly, numbers disagree, and nobody trusts freshness.
+1. Order data sits in Postgres; reports are late or disagree.
+2. Ops still need clear answers: what sells, who comes back, which day peaks.
+3. Leadership wants a forward view: next-week GMV and who to reactivate.
 
-## Solution
+## Solution (three layers)
 
-1. Keep Postgres as system of record
-2. Stream changed order lines into ClickHouse by watermark `(updated_at, id)`
-3. Build marts (daily sales, customer LTV, top products)
-4. Quality gate: Postgres vs ClickHouse row/GMV parity, duplicates, freshness
-5. Serve Metabase for business users (Streamlit only as a demo app)
+### Data Engineer
+- Stream Postgres `marketplace_orders` into ClickHouse by watermark
+- Build marts (daily sales, LTV, top products)
+- Quality gates including Postgres vs ClickHouse parity
+
+### Data Analyst
+- Category GMV mix
+- Repeat-buyer rate
+- Weekday seasonality
+- Cohort LTV at day-30
+- Written takeaways in `analysis/insights.md` / `scripts/run_analysis.py`
+
+### Data Scientist
+- 14-day GMV forecast with MAE/MAPE backtest
+- Buyer reactivation priority list (RFM-style ranking)
 
 ## Architecture
 
 ```text
-Postgres marketplace_orders
-      |
-      |  stream worker
-      v
-ClickHouse raw + marts
-      |
- +----+------------+
- |                 |
- v                 v
-quality          Metabase
-checks           (client BI)
+Postgres
+   -> stream -> ClickHouse marts
+                    |
+         +----------+-----------+
+         |          |           |
+      Metabase   Analyst     Forecast /
+                 insights    reactivation
 ```
 
-## Sample outcome (anonymized demo)
+## What to say in a pitch
 
-- ~3,000 order lines from a masked extract
-- Near-real-time catch-up when new Postgres rows are inserted
-- All quality checks passing before the dashboard is used
+- "I do not stop at the pipeline. I turn trusted marts into decisions and a simple forecast ops can use."
+- "DE makes the numbers trustworthy. DA explains the business. DS ranks the next action."
 
-## What this proves
-
-- Can connect OLTP (Postgres) to OLAP (ClickHouse), not only load a CSV
-- Can define GMV / AOV / LTV with a consistent grain
-- Can gate bad or stale data before stakeholders see it
-- Can put a BI tool in front that non-engineers actually open
-
-## Attachments checklist
+## Attachments
 
 1. This case study
 2. Dashboard screenshot
-3. Repo link above
+3. Optional: terminal output of `run_analysis.py` and `forecast_daily_gmv.py`
+4. Repo link above

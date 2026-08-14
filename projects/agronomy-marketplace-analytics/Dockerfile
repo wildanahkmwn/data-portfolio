@@ -7,6 +7,8 @@ COPY scripts ./scripts
 COPY sql ./sql
 COPY postgres ./postgres
 COPY checks ./checks
+COPY analysis ./analysis
+COPY science ./science
 COPY sample_data ./sample_data
 ENV PYTHONPATH=/app
 

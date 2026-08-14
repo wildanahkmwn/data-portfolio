@@ -9,7 +9,7 @@ Shared hire-me docs live in `docs/` so they can be attached on Upwork, email, or
 
 | Project | Domain | Stack | Status |
 |---|---|---|---|
-| [agronomy-marketplace-analytics](projects/agronomy-marketplace-analytics/) | Agronomy marketplace: Postgres to ClickHouse to Metabase | Postgres, Python, ClickHouse, Metabase | Ready |
+| [agronomy-marketplace-analytics](projects/agronomy-marketplace-analytics/) | Agronomy marketplace: DE pipeline + DA insights + DS forecast | Postgres, ClickHouse, Metabase, Python | Ready |
 
 ## Shared attachments
 

@@ -5,19 +5,22 @@ Not platform-locked. Pair with `docs/case_study.md` + dashboard screenshot.
 
 ## Profile title options
 
-1. Data Engineer | ClickHouse, Python, SQL | Pipelines + Dashboards
-2. Analytics Engineer | Marketplace GMV/AOV Marts + Data Quality
-3. End-to-End Data Specialist | Ingest, Warehouse, Quality, Metabase
+1. Data Engineer | ClickHouse, Python, SQL | Pipelines + Quality
+2. Analytics Engineer | Marketplace GMV/AOV + Insights + Forecast
+3. End-to-End Data Specialist | Postgres to ClickHouse to Metabase + DS actions
 
 ## Overview (paste into Upwork About)
 
 I build practical data stacks for ecommerce and marketplace teams:
-ingest -> warehouse -> SQL marts -> quality checks -> dashboard.
+ingest -> warehouse -> SQL marts -> quality checks -> dashboard,
+then analysis and lightweight forecasting on top of trusted data.
 
 Typical outcomes:
 - Trusted GMV / AOV / LTV metrics with clear definitions
 - Freshness and duplicate checks before data is used
-- Lightweight MVP stack (Postgres + ClickHouse + Metabase) without heavy platform cost
+- Analyst answers (category mix, repeat rate, cohorts)
+- Simple DS outputs (14-day GMV forecast, reactivation list)
+- Lightweight MVP stack (Postgres + ClickHouse + Metabase)
 
 Portfolio monorepo:
 https://github.com/wildanahkmwn/data-portfolio
