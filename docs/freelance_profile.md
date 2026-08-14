@@ -22,8 +22,9 @@ Typical outcomes:
 Portfolio monorepo:
 https://github.com/wildanahkmwn/data-portfolio
 
-Featured project:
-`projects/agronomy-marketplace-analytics/`
+Featured projects:
+- `projects/agronomy-marketplace-analytics/`
+- `projects/postgres-to-clickhouse-stream/`
 
 I work well when the brief is fuzzy ("our numbers don't match") and need
 someone who can turn it into a measurable pipeline and a usable dashboard.

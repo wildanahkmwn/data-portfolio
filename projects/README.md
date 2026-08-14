@@ -10,6 +10,7 @@ Self-contained portfolio demos. Each folder should include:
 ## Current
 
 - `agronomy-marketplace-analytics/` — marketplace orders to ClickHouse marts to Streamlit
+- `postgres-to-clickhouse-stream/` — near-real-time Postgres to ClickHouse sync
 
 ## Template
 

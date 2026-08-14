@@ -1,0 +1,77 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pg2ch_postgres
+    environment:
+      POSTGRES_USER: stream
+      POSTGRES_PASSWORD: stream
+      POSTGRES_DB: marketplace
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stream -d marketplace"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    command:
+      - postgres
+      - -c
+      - wal_level=logical
+      - -c
+      - max_replication_slots=4
+      - -c
+      - max_wal_senders=4
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    container_name: pg2ch_clickhouse
+    environment:
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: stream
+      CLICKHOUSE_DB: default
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+    ports:
+      - "8124:8123"
+      - "9001:9000"
+    volumes:
+      - ch_data:/var/lib/clickhouse
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8123/ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  stream:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pg2ch_stream
+    depends_on:
+      postgres:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+    environment:
+      PG_HOST: postgres
+      PG_PORT: "5432"
+      PG_USER: stream
+      PG_PASSWORD: stream
+      PG_DATABASE: marketplace
+      CH_HOST: clickhouse
+      CH_PORT: "8123"
+      CH_USER: default
+      CH_PASSWORD: stream
+      STREAM_POLL_SECONDS: "2"
+      STREAM_BATCH_SIZE: "500"
+    restart: unless-stopped
+
+volumes:
+  pg_data:
+  ch_data:
