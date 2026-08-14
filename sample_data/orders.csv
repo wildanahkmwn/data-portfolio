@@ -1,0 +1,366 @@
+order_id,order_date,customer_id,customer_name,product_id,product_name,category,quantity,unit_price,currency
+ORD-1001,2026-07-25,C002,Koperasi Maju Bersama,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1002,2026-06-29,C003,CV Hijau Lestari,P002,Herbicide Glyphosate 1L,Agro Input,2,72000,IDR
+ORD-1002,2026-06-29,C003,CV Hijau Lestari,P006,Seedling Tray 50 cell,Nursery,7,28000,IDR
+ORD-1002,2026-06-29,C003,CV Hijau Lestari,P007,Chain Saw Chain 20in,Tools,1,155000,IDR
+ORD-1003,2026-06-16,C002,Koperasi Maju Bersama,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1004,2026-07-20,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1004,2026-07-20,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,1,72000,IDR
+ORD-1004,2026-07-20,C004,UD Tani Makmur,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1005,2026-07-29,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1005,2026-07-29,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,6,72000,IDR
+ORD-1006,2026-06-21,C002,Koperasi Maju Bersama,P002,Herbicide Glyphosate 1L,Agro Input,6,72000,IDR
+ORD-1006,2026-06-21,C002,Koperasi Maju Bersama,P003,Palm Sickle Pro,Tools,5,95000,IDR
+ORD-1007,2026-08-05,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1007,2026-08-05,C001,Mitra Sawit Jaya,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1007,2026-08-05,C001,Mitra Sawit Jaya,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1008,2026-08-07,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1008,2026-08-07,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1008,2026-08-07,C006,Gapoktan Sejahtera,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1009,2026-06-20,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1010,2026-07-14,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,6,28000,IDR
+ORD-1011,2026-06-28,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1011,2026-06-28,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1011,2026-06-28,C005,PT Agro Nusantara,P006,Seedling Tray 50 cell,Nursery,3,28000,IDR
+ORD-1012,2026-07-14,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,6,210000,IDR
+ORD-1012,2026-07-14,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1013,2026-06-29,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,2,155000,IDR
+ORD-1013,2026-06-29,C001,Mitra Sawit Jaya,P003,Palm Sickle Pro,Tools,4,95000,IDR
+ORD-1014,2026-08-12,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1015,2026-08-10,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,3,45000,IDR
+ORD-1016,2026-06-30,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1016,2026-06-30,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1016,2026-06-30,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1017,2026-07-17,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1018,2026-06-24,C003,CV Hijau Lestari,P007,Chain Saw Chain 20in,Tools,7,155000,IDR
+ORD-1018,2026-06-24,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1018,2026-06-24,C003,CV Hijau Lestari,P001,Fertilizer NPK 16-16-16,Agro Input,8,185000,IDR
+ORD-1019,2026-07-18,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1019,2026-07-18,C005,PT Agro Nusantara,P006,Seedling Tray 50 cell,Nursery,5,28000,IDR
+ORD-1019,2026-07-18,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1020,2026-06-22,C005,PT Agro Nusantara,P003,Palm Sickle Pro,Tools,1,95000,IDR
+ORD-1020,2026-06-22,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1021,2026-07-17,C003,CV Hijau Lestari,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1021,2026-07-17,C003,CV Hijau Lestari,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1021,2026-07-17,C003,CV Hijau Lestari,P006,Seedling Tray 50 cell,Nursery,3,28000,IDR
+ORD-1022,2026-07-08,C003,CV Hijau Lestari,P001,Fertilizer NPK 16-16-16,Agro Input,8,185000,IDR
+ORD-1022,2026-07-08,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,1,45000,IDR
+ORD-1022,2026-07-08,C003,CV Hijau Lestari,P003,Palm Sickle Pro,Tools,2,95000,IDR
+ORD-1023,2026-08-13,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,4,210000,IDR
+ORD-1023,2026-08-13,C006,Gapoktan Sejahtera,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1024,2026-06-20,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1025,2026-07-27,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1025,2026-07-27,C008,UD Sumber Rejeki,P008,Raincoat Heavy Duty,PPE,4,125000,IDR
+ORD-1025,2026-07-27,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1026,2026-07-30,C005,PT Agro Nusantara,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1026,2026-07-30,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1027,2026-06-30,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1028,2026-07-22,C004,UD Tani Makmur,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1028,2026-07-22,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,4,185000,IDR
+ORD-1028,2026-07-22,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,2,155000,IDR
+ORD-1029,2026-08-11,C001,Mitra Sawit Jaya,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1029,2026-08-11,C001,Mitra Sawit Jaya,P005,Motor Grease 500g,Maintenance,5,45000,IDR
+ORD-1030,2026-07-27,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,8,95000,IDR
+ORD-1031,2026-06-30,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1031,2026-06-30,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1032,2026-07-07,C007,Toko Tani Barokah,P008,Raincoat Heavy Duty,PPE,1,125000,IDR
+ORD-1032,2026-07-07,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,2,155000,IDR
+ORD-1033,2026-06-18,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1033,2026-06-18,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1033,2026-06-18,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,4,185000,IDR
+ORD-1034,2026-07-19,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,3,155000,IDR
+ORD-1035,2026-07-02,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,8,72000,IDR
+ORD-1036,2026-08-05,C002,Koperasi Maju Bersama,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1037,2026-08-13,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1038,2026-07-15,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1038,2026-07-15,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,1,72000,IDR
+ORD-1039,2026-07-09,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,8,45000,IDR
+ORD-1039,2026-07-09,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1040,2026-06-27,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,1,185000,IDR
+ORD-1041,2026-08-01,C006,Gapoktan Sejahtera,P001,Fertilizer NPK 16-16-16,Agro Input,8,185000,IDR
+ORD-1042,2026-07-17,C003,CV Hijau Lestari,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1043,2026-06-19,C002,Koperasi Maju Bersama,P004,Safety Boots Size 42,PPE,4,210000,IDR
+ORD-1043,2026-06-19,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,1,125000,IDR
+ORD-1043,2026-06-19,C002,Koperasi Maju Bersama,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1044,2026-07-11,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,6,210000,IDR
+ORD-1044,2026-07-11,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1045,2026-07-01,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,8,45000,IDR
+ORD-1046,2026-07-05,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1047,2026-06-19,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1047,2026-06-19,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1047,2026-06-19,C004,UD Tani Makmur,P003,Palm Sickle Pro,Tools,6,95000,IDR
+ORD-1048,2026-07-03,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,1,45000,IDR
+ORD-1048,2026-07-03,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,5,125000,IDR
+ORD-1049,2026-08-13,C002,Koperasi Maju Bersama,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1050,2026-08-10,C002,Koperasi Maju Bersama,P003,Palm Sickle Pro,Tools,4,95000,IDR
+ORD-1050,2026-08-10,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1050,2026-08-10,C002,Koperasi Maju Bersama,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1051,2026-07-28,C005,PT Agro Nusantara,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1051,2026-07-28,C005,PT Agro Nusantara,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1051,2026-07-28,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1052,2026-06-17,C001,Mitra Sawit Jaya,P003,Palm Sickle Pro,Tools,5,95000,IDR
+ORD-1052,2026-06-17,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,3,28000,IDR
+ORD-1053,2026-08-01,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,2,155000,IDR
+ORD-1053,2026-08-01,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1053,2026-08-01,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,3,185000,IDR
+ORD-1054,2026-07-19,C001,Mitra Sawit Jaya,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1054,2026-07-19,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1055,2026-07-04,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1056,2026-07-28,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1056,2026-07-28,C004,UD Tani Makmur,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1056,2026-07-28,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1057,2026-08-09,C003,CV Hijau Lestari,P007,Chain Saw Chain 20in,Tools,1,155000,IDR
+ORD-1058,2026-06-26,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1058,2026-06-26,C006,Gapoktan Sejahtera,P003,Palm Sickle Pro,Tools,2,95000,IDR
+ORD-1059,2026-07-09,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,8,210000,IDR
+ORD-1059,2026-07-09,C001,Mitra Sawit Jaya,P002,Herbicide Glyphosate 1L,Agro Input,6,72000,IDR
+ORD-1060,2026-07-04,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,4,185000,IDR
+ORD-1061,2026-07-10,C006,Gapoktan Sejahtera,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1061,2026-07-10,C006,Gapoktan Sejahtera,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1062,2026-07-26,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,5,28000,IDR
+ORD-1062,2026-07-26,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,3,185000,IDR
+ORD-1062,2026-07-26,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1063,2026-06-17,C002,Koperasi Maju Bersama,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1063,2026-06-17,C002,Koperasi Maju Bersama,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1063,2026-06-17,C002,Koperasi Maju Bersama,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1064,2026-07-09,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1064,2026-07-09,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1065,2026-07-18,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1065,2026-07-18,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1066,2026-07-27,C002,Koperasi Maju Bersama,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1066,2026-07-27,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1066,2026-07-27,C002,Koperasi Maju Bersama,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1067,2026-07-29,C005,PT Agro Nusantara,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1067,2026-07-29,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1067,2026-07-29,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1068,2026-07-10,C001,Mitra Sawit Jaya,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1068,2026-07-10,C001,Mitra Sawit Jaya,P002,Herbicide Glyphosate 1L,Agro Input,6,72000,IDR
+ORD-1069,2026-07-14,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,8,210000,IDR
+ORD-1069,2026-07-14,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,3,45000,IDR
+ORD-1070,2026-07-27,C002,Koperasi Maju Bersama,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1070,2026-07-27,C002,Koperasi Maju Bersama,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1071,2026-06-29,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,1,185000,IDR
+ORD-1072,2026-06-30,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1072,2026-06-30,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,7,210000,IDR
+ORD-1072,2026-06-30,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1073,2026-07-10,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1074,2026-08-03,C007,Toko Tani Barokah,P003,Palm Sickle Pro,Tools,8,95000,IDR
+ORD-1075,2026-06-18,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,3,125000,IDR
+ORD-1076,2026-08-05,C008,UD Sumber Rejeki,P006,Seedling Tray 50 cell,Nursery,7,28000,IDR
+ORD-1076,2026-08-05,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1076,2026-08-05,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1077,2026-08-01,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1077,2026-08-01,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1078,2026-08-03,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1078,2026-08-03,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,5,95000,IDR
+ORD-1078,2026-08-03,C008,UD Sumber Rejeki,P008,Raincoat Heavy Duty,PPE,4,125000,IDR
+ORD-1079,2026-07-02,C006,Gapoktan Sejahtera,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1079,2026-07-02,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,4,125000,IDR
+ORD-1080,2026-07-09,C003,CV Hijau Lestari,P004,Safety Boots Size 42,PPE,7,210000,IDR
+ORD-1080,2026-07-09,C003,CV Hijau Lestari,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1080,2026-07-09,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1081,2026-07-11,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,7,155000,IDR
+ORD-1082,2026-08-11,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1082,2026-08-11,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1082,2026-08-11,C001,Mitra Sawit Jaya,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1083,2026-08-08,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1083,2026-08-08,C007,Toko Tani Barokah,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1083,2026-08-08,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,8,72000,IDR
+ORD-1084,2026-06-16,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,3,155000,IDR
+ORD-1084,2026-06-16,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1085,2026-08-12,C003,CV Hijau Lestari,P001,Fertilizer NPK 16-16-16,Agro Input,1,185000,IDR
+ORD-1085,2026-08-12,C003,CV Hijau Lestari,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1085,2026-08-12,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1086,2026-06-23,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1087,2026-07-09,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1088,2026-07-06,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,2,155000,IDR
+ORD-1088,2026-07-06,C007,Toko Tani Barokah,P003,Palm Sickle Pro,Tools,8,95000,IDR
+ORD-1089,2026-06-16,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1089,2026-06-16,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1090,2026-08-02,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1091,2026-07-24,C003,CV Hijau Lestari,P003,Palm Sickle Pro,Tools,8,95000,IDR
+ORD-1092,2026-07-27,C002,Koperasi Maju Bersama,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1092,2026-07-27,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1092,2026-07-27,C002,Koperasi Maju Bersama,P006,Seedling Tray 50 cell,Nursery,3,28000,IDR
+ORD-1093,2026-07-23,C002,Koperasi Maju Bersama,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1094,2026-07-22,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1094,2026-07-22,C001,Mitra Sawit Jaya,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1095,2026-07-22,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1096,2026-08-04,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1096,2026-08-04,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1097,2026-07-17,C006,Gapoktan Sejahtera,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1098,2026-06-21,C007,Toko Tani Barokah,P008,Raincoat Heavy Duty,PPE,3,125000,IDR
+ORD-1098,2026-06-21,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,7,28000,IDR
+ORD-1099,2026-06-26,C005,PT Agro Nusantara,P008,Raincoat Heavy Duty,PPE,5,125000,IDR
+ORD-1099,2026-06-26,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,6,210000,IDR
+ORD-1099,2026-06-26,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1100,2026-08-07,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1100,2026-08-07,C002,Koperasi Maju Bersama,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1101,2026-07-06,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1101,2026-07-06,C001,Mitra Sawit Jaya,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1102,2026-07-07,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,5,45000,IDR
+ORD-1102,2026-07-07,C005,PT Agro Nusantara,P008,Raincoat Heavy Duty,PPE,1,125000,IDR
+ORD-1103,2026-07-18,C004,UD Tani Makmur,P004,Safety Boots Size 42,PPE,7,210000,IDR
+ORD-1104,2026-07-16,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1104,2026-07-16,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1104,2026-07-16,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,1,155000,IDR
+ORD-1105,2026-06-20,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1106,2026-07-04,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,6,28000,IDR
+ORD-1106,2026-07-04,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,6,210000,IDR
+ORD-1107,2026-07-29,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1107,2026-07-29,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,2,95000,IDR
+ORD-1108,2026-07-31,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1108,2026-07-31,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1109,2026-06-28,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1109,2026-06-28,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1110,2026-06-29,C006,Gapoktan Sejahtera,P005,Motor Grease 500g,Maintenance,1,45000,IDR
+ORD-1111,2026-07-30,C003,CV Hijau Lestari,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1111,2026-07-30,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,3,125000,IDR
+ORD-1112,2026-07-25,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1113,2026-07-15,C008,UD Sumber Rejeki,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1113,2026-07-15,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1114,2026-08-09,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1115,2026-07-16,C002,Koperasi Maju Bersama,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1115,2026-07-16,C002,Koperasi Maju Bersama,P002,Herbicide Glyphosate 1L,Agro Input,2,72000,IDR
+ORD-1115,2026-07-16,C002,Koperasi Maju Bersama,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1116,2026-06-22,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,7,210000,IDR
+ORD-1116,2026-06-22,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1116,2026-06-22,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,8,45000,IDR
+ORD-1117,2026-07-04,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1117,2026-07-04,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1118,2026-07-25,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1118,2026-07-25,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,3,125000,IDR
+ORD-1119,2026-07-20,C002,Koperasi Maju Bersama,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1120,2026-07-13,C008,UD Sumber Rejeki,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1120,2026-07-13,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1121,2026-07-29,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1122,2026-08-04,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,4,72000,IDR
+ORD-1122,2026-08-04,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,3,45000,IDR
+ORD-1123,2026-08-12,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,1,72000,IDR
+ORD-1124,2026-06-25,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,8,45000,IDR
+ORD-1124,2026-06-25,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1124,2026-06-25,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,7,185000,IDR
+ORD-1125,2026-07-02,C008,UD Sumber Rejeki,P002,Herbicide Glyphosate 1L,Agro Input,1,72000,IDR
+ORD-1125,2026-07-02,C008,UD Sumber Rejeki,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1126,2026-08-01,C006,Gapoktan Sejahtera,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1126,2026-08-01,C006,Gapoktan Sejahtera,P001,Fertilizer NPK 16-16-16,Agro Input,1,185000,IDR
+ORD-1126,2026-08-01,C006,Gapoktan Sejahtera,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1127,2026-07-21,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1128,2026-08-12,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1129,2026-06-20,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1129,2026-06-20,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,2,95000,IDR
+ORD-1130,2026-08-08,C003,CV Hijau Lestari,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1130,2026-08-08,C003,CV Hijau Lestari,P006,Seedling Tray 50 cell,Nursery,5,28000,IDR
+ORD-1131,2026-07-27,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1131,2026-07-27,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1131,2026-07-27,C007,Toko Tani Barokah,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1132,2026-06-22,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,8,185000,IDR
+ORD-1132,2026-06-22,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,7,28000,IDR
+ORD-1132,2026-06-22,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,1,45000,IDR
+ORD-1133,2026-06-27,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,1,125000,IDR
+ORD-1133,2026-06-27,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1133,2026-06-27,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1134,2026-07-20,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1134,2026-07-20,C003,CV Hijau Lestari,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1135,2026-06-16,C004,UD Tani Makmur,P003,Palm Sickle Pro,Tools,1,95000,IDR
+ORD-1135,2026-06-16,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1135,2026-06-16,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1136,2026-06-29,C002,Koperasi Maju Bersama,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1136,2026-06-29,C002,Koperasi Maju Bersama,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1137,2026-08-13,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,8,45000,IDR
+ORD-1137,2026-08-13,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,4,210000,IDR
+ORD-1137,2026-08-13,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1138,2026-07-20,C003,CV Hijau Lestari,P004,Safety Boots Size 42,PPE,3,210000,IDR
+ORD-1138,2026-07-20,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,2,45000,IDR
+ORD-1139,2026-07-02,C007,Toko Tani Barokah,P005,Motor Grease 500g,Maintenance,1,45000,IDR
+ORD-1139,2026-07-02,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1140,2026-07-31,C005,PT Agro Nusantara,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1140,2026-07-31,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1140,2026-07-31,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,6,72000,IDR
+ORD-1141,2026-07-06,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,4,28000,IDR
+ORD-1141,2026-07-06,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1142,2026-07-21,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,1,155000,IDR
+ORD-1143,2026-07-05,C008,UD Sumber Rejeki,P007,Chain Saw Chain 20in,Tools,3,155000,IDR
+ORD-1143,2026-07-05,C008,UD Sumber Rejeki,P004,Safety Boots Size 42,PPE,8,210000,IDR
+ORD-1143,2026-07-05,C008,UD Sumber Rejeki,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1144,2026-06-23,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1145,2026-07-18,C008,UD Sumber Rejeki,P003,Palm Sickle Pro,Tools,7,95000,IDR
+ORD-1146,2026-08-09,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,5,125000,IDR
+ORD-1147,2026-07-06,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1147,2026-07-06,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1147,2026-07-06,C007,Toko Tani Barokah,P003,Palm Sickle Pro,Tools,8,95000,IDR
+ORD-1148,2026-08-09,C001,Mitra Sawit Jaya,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1148,2026-08-09,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,4,125000,IDR
+ORD-1148,2026-08-09,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1149,2026-07-12,C002,Koperasi Maju Bersama,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1149,2026-07-12,C002,Koperasi Maju Bersama,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1149,2026-07-12,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,1,125000,IDR
+ORD-1150,2026-07-05,C001,Mitra Sawit Jaya,P006,Seedling Tray 50 cell,Nursery,7,28000,IDR
+ORD-1150,2026-07-05,C001,Mitra Sawit Jaya,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1151,2026-06-30,C007,Toko Tani Barokah,P003,Palm Sickle Pro,Tools,2,95000,IDR
+ORD-1151,2026-06-30,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1151,2026-06-30,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1152,2026-07-16,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,5,125000,IDR
+ORD-1153,2026-07-14,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1153,2026-07-14,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,3,155000,IDR
+ORD-1153,2026-07-14,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,2,210000,IDR
+ORD-1154,2026-07-13,C006,Gapoktan Sejahtera,P005,Motor Grease 500g,Maintenance,5,45000,IDR
+ORD-1154,2026-07-13,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1154,2026-07-13,C006,Gapoktan Sejahtera,P004,Safety Boots Size 42,PPE,5,210000,IDR
+ORD-1155,2026-06-27,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1155,2026-06-27,C007,Toko Tani Barokah,P008,Raincoat Heavy Duty,PPE,6,125000,IDR
+ORD-1156,2026-07-21,C005,PT Agro Nusantara,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1156,2026-07-21,C005,PT Agro Nusantara,P001,Fertilizer NPK 16-16-16,Agro Input,5,185000,IDR
+ORD-1156,2026-07-21,C005,PT Agro Nusantara,P006,Seedling Tray 50 cell,Nursery,1,28000,IDR
+ORD-1157,2026-07-21,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,4,125000,IDR
+ORD-1157,2026-07-21,C001,Mitra Sawit Jaya,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1157,2026-07-21,C001,Mitra Sawit Jaya,P003,Palm Sickle Pro,Tools,4,95000,IDR
+ORD-1158,2026-07-25,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,3,45000,IDR
+ORD-1158,2026-07-25,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1158,2026-07-25,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,1,155000,IDR
+ORD-1159,2026-07-04,C008,UD Sumber Rejeki,P006,Seedling Tray 50 cell,Nursery,3,28000,IDR
+ORD-1160,2026-06-20,C005,PT Agro Nusantara,P007,Chain Saw Chain 20in,Tools,4,155000,IDR
+ORD-1160,2026-06-20,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1161,2026-08-04,C006,Gapoktan Sejahtera,P005,Motor Grease 500g,Maintenance,5,45000,IDR
+ORD-1161,2026-08-04,C006,Gapoktan Sejahtera,P007,Chain Saw Chain 20in,Tools,8,155000,IDR
+ORD-1161,2026-08-04,C006,Gapoktan Sejahtera,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1162,2026-08-01,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1163,2026-06-24,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,6,155000,IDR
+ORD-1163,2026-06-24,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1163,2026-06-24,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,7,45000,IDR
+ORD-1164,2026-06-15,C005,PT Agro Nusantara,P002,Herbicide Glyphosate 1L,Agro Input,5,72000,IDR
+ORD-1164,2026-06-15,C005,PT Agro Nusantara,P004,Safety Boots Size 42,PPE,7,210000,IDR
+ORD-1164,2026-06-15,C005,PT Agro Nusantara,P003,Palm Sickle Pro,Tools,6,95000,IDR
+ORD-1165,2026-06-21,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1165,2026-06-21,C004,UD Tani Makmur,P005,Motor Grease 500g,Maintenance,4,45000,IDR
+ORD-1166,2026-07-26,C002,Koperasi Maju Bersama,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1166,2026-07-26,C002,Koperasi Maju Bersama,P006,Seedling Tray 50 cell,Nursery,2,28000,IDR
+ORD-1166,2026-07-26,C002,Koperasi Maju Bersama,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1167,2026-06-17,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,2,125000,IDR
+ORD-1167,2026-06-17,C001,Mitra Sawit Jaya,P001,Fertilizer NPK 16-16-16,Agro Input,4,185000,IDR
+ORD-1168,2026-08-10,C003,CV Hijau Lestari,P008,Raincoat Heavy Duty,PPE,7,125000,IDR
+ORD-1168,2026-08-10,C003,CV Hijau Lestari,P003,Palm Sickle Pro,Tools,3,95000,IDR
+ORD-1169,2026-08-10,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,7,72000,IDR
+ORD-1169,2026-08-10,C007,Toko Tani Barokah,P007,Chain Saw Chain 20in,Tools,5,155000,IDR
+ORD-1169,2026-08-10,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1170,2026-07-29,C006,Gapoktan Sejahtera,P008,Raincoat Heavy Duty,PPE,8,125000,IDR
+ORD-1171,2026-06-30,C006,Gapoktan Sejahtera,P006,Seedling Tray 50 cell,Nursery,6,28000,IDR
+ORD-1172,2026-06-18,C007,Toko Tani Barokah,P004,Safety Boots Size 42,PPE,8,210000,IDR
+ORD-1172,2026-06-18,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,2,185000,IDR
+ORD-1173,2026-07-27,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,4,185000,IDR
+ORD-1173,2026-07-27,C004,UD Tani Makmur,P008,Raincoat Heavy Duty,PPE,3,125000,IDR
+ORD-1173,2026-07-27,C004,UD Tani Makmur,P003,Palm Sickle Pro,Tools,4,95000,IDR
+ORD-1174,2026-06-19,C004,UD Tani Makmur,P004,Safety Boots Size 42,PPE,6,210000,IDR
+ORD-1174,2026-06-19,C004,UD Tani Makmur,P007,Chain Saw Chain 20in,Tools,3,155000,IDR
+ORD-1174,2026-06-19,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,1,72000,IDR
+ORD-1175,2026-07-02,C003,CV Hijau Lestari,P005,Motor Grease 500g,Maintenance,3,45000,IDR
+ORD-1176,2026-06-22,C001,Mitra Sawit Jaya,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1177,2026-08-04,C004,UD Tani Makmur,P006,Seedling Tray 50 cell,Nursery,5,28000,IDR
+ORD-1177,2026-08-04,C004,UD Tani Makmur,P001,Fertilizer NPK 16-16-16,Agro Input,1,185000,IDR
+ORD-1177,2026-08-04,C004,UD Tani Makmur,P002,Herbicide Glyphosate 1L,Agro Input,3,72000,IDR
+ORD-1178,2026-08-01,C007,Toko Tani Barokah,P002,Herbicide Glyphosate 1L,Agro Input,8,72000,IDR
+ORD-1178,2026-08-01,C007,Toko Tani Barokah,P006,Seedling Tray 50 cell,Nursery,8,28000,IDR
+ORD-1178,2026-08-01,C007,Toko Tani Barokah,P001,Fertilizer NPK 16-16-16,Agro Input,6,185000,IDR
+ORD-1179,2026-07-17,C002,Koperasi Maju Bersama,P004,Safety Boots Size 42,PPE,1,210000,IDR
+ORD-1179,2026-07-17,C002,Koperasi Maju Bersama,P005,Motor Grease 500g,Maintenance,5,45000,IDR
+ORD-1180,2026-07-14,C001,Mitra Sawit Jaya,P008,Raincoat Heavy Duty,PPE,7,125000,IDR

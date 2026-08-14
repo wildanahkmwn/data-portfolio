@@ -1,0 +1,9 @@
+.git
+.venv/
+.ch_local/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.streamlit/secrets.toml
+*.log
